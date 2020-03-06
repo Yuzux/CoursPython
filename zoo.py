@@ -39,3 +39,18 @@ if __name__ == "__main__":
 
     for my_key in Animal:
         print("Non : " + my_key + " " + str(Animal[my_key]))
+
+    print("--------------------------------------------------------------------")
+    print("Que voulez vous faire ?")
+    print("1 - Quelle quantité de nourriture acheter par semaine ?")
+    print("2 - Combien y a t’il d’animaux marins ?")
+    print("3 - Combien y a t’il d’omnivores ?")
+    print("4 - Combien y a t’il de pattes dans ce zoo ?")
+
+    choix = input()
+    qttAchete = 0
+    if choix == 1 :
+        for my_key in Animal:
+            qttAchete = qttAchete + (Animal[my_key].qttNouri * 7)
+    
+    print(qttAchete)

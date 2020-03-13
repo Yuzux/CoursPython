@@ -5,7 +5,7 @@ class Animal:
     def __init__(self, typeAnimal, age):
         self.type = typeAnimal
         self.age = age
-        self.sex = random.choice(['Feminin', 'Masculin','Non Binaire'])
+        self.sex = random.choice(['Femelle', 'Male','Non Binaire'])
 
     def __str__(self):
         return "Type: {} age: {} sex: {}".format(self.type, self.age, self.sex)
